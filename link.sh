@@ -16,6 +16,7 @@ ln -s $PWD/i3 $HOME/.config
 ln -s $PWD/i3blocks.conf $HOME/.i3blocks.conf
 
 ln -s $PWD/Xresources $HOME/.Xresources
+ln -s $PWD/Xmodmap $HOME/.Xmodmap
 
 ln -s $PWD/latexmkrc $HOME/.latexmkrc
 
