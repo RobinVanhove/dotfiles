@@ -1,0 +1,50 @@
+Host arenberg
+    User r0620169 
+#    ForwardAgent yes	
+    HostName st.cs.kuleuven.be
+    IdentityFile ~/.ssh/sol_id_rsa
+
+Host *.cs.kotnet.kuleuven.be
+    User r0620169 
+#    ProxyCommand  ssh arenberg nc %h %p 2> /dev/null
+    IdentityFile ~/.ssh/sol_id_rsa
+
+Host gondor gondor.wina.be wina.be
+    HostName gondor.wina.be
+    User robin
+    ForwardAgent yes	
+    IdentitiesOnly yes
+
+Host rohan rohan.wina.be
+    HostName rohan.wina.be
+    User robin
+    ForwardAgent yes	
+    IdentitiesOnly yes
+
+Host shire shire.wina.be
+    HostName shire.wina.be
+    User robin
+    ForwardAgent yes	
+    IdentitiesOnly yes
+
+Host mordor mordor.wina.be
+    HostName mordor.wina.be
+    User robin
+    ForwardAgent yes	
+    IdentitiesOnly yes
+
+Host git.wina.be
+    User git
+    IdentitiesOnly yes
+
+Host gitlab.com
+    User git
+    IdentitiesOnly yes
+
+HOST ssh.pcextreme.nl kljhagelstein.be
+    User kljhagelstein-be
+    HostName ssh.pcextreme.nl
+
+Host numenor
+    StrictHostKeyChecking no
+    UserKnownHostsFile /dev/null

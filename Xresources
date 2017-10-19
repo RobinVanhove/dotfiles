@@ -1,0 +1,62 @@
+Xcursor.theme: breeze
+
+! Termnal - urxvt
+URxvt.font: xft:hack:size=11 
+!URxvt.font: xft:Sauce Code Powerline:style=Bold regular:size=11
+URxvt.background: black
+URxvt.foreground: white
+URxvt*scrollBar:  false
+
+URxvt.perl-ext-common:	default,matcher
+URxvt.url-launcher:	/usr/bin/xdg-open
+URxvt.matcher.button:	1
+
+! do not scroll with output
+URxvt*scrollTtyOutput: false
+
+! scroll in relation to buffer (with mouse scroll or Shift+Page Up)
+URxvt*scrollWithBuffer: true
+
+! scroll back to the bottom on keypress
+URxvt*scrollTtyKeypress: true
+
+
+
+! special colors
+*.foreground:  #c0c5ce
+*.background:  #2b303b
+*.cursorColor:  #c0c5ce
+! black
+*.color0:      #2b303b
+*.color8:      #65737e
+! red
+*.color1:      #bf616a
+*.color9:      #bf616a
+! green
+*.color2:      #a3be8c
+*.color10:     #a3be8c
+! yellow
+*.color3:      #ebcb8b
+*.color11:     #ebcb8b
+! blue
+*.color4:      #8fa1b3
+*.color12:     #8fa1b3
+! magenta
+*.color5:      #b48ead
+*.color13:     #b48ead
+! cyan
+*.color6:      #96b5b4
+*.color14:     #96b5b4
+! white
+*.color7:      #c0c5ce
+*.color15:     #eff1f5
+
+! ------------------------------------------------------------------------------
+! ROFI Color theme
+! Copyright: Rasmus Steinke
+! ------------------------------------------------------------------------------
+rofi.color-enabled: true
+rofi.color-window: #1d1f21, #1d1f21, #1e2529
+rofi.color-normal: #1d1f21, #c1c1c1, #1d1f21, #394249, #ffffff
+rofi.color-active: #1d1f21, #80cbc4, #1d1f21, #394249, #80cbc4
+rofi.color-urgent: #1d1f21, #ff1844, #1d1f21, #394249, #ff1844
