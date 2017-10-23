@@ -124,7 +124,7 @@ exec --no-startup-id i3-msg 'workspace 8; exec thunderbird; workspace 1'
 exec --no-startup-id i3-msg 'workspace 10; exec riot-desktop; workspace 1'
 exec --no-startup-id i3-msg 'workspace 9; exec keepassxc; workspace 1'
 exec --no-startup-id i3-msg 'redshift -l 50.8503:4.3517'
-exec --no-startup-id i3-msg 'mpd'
+exec_always 'mpd'
 
 bindsym $alt+Shift+s sticky toggle
 
@@ -186,5 +186,5 @@ exec synclient TapButton1=1 TapButton2=1 TapButton3=1
 # xrandr
 exec_always xrandr --output VIRTUAL1 --off --output eDP1 --primary --mode 1920x1080 --pos 0x0 --rotate normal --output DP1 --off --output HDMI2 --off --output HDMI1 --off --output DP1-3 --mode 1920x1080 --pos 0x0 --rotate normal --output DP1-2 --off --output DP1-1 --off --output DP2 --off
 # xmodmap
-exec_always xmodmap ~/.Xmodmap
+exec xmodmap ~/.Xmodmap
 

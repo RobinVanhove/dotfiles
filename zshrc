@@ -43,6 +43,8 @@ setopt CORRECT
 
 # add path to ruby gems
 PATH="$(ruby -e 'print Gem.user_dir')/bin:$PATH"
+# Add python (pip) bin to path
+PATH=$PATH:~/.local/bin
 
 bindkey "^n" autosuggest-accept #ctrl+n to accept suggestion
 function gi() { curl -L -s https://www.gitignore.io/api/$@ ;}
