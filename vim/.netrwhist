@@ -1,7 +1,4 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =5
-let g:netrw_dirhist_1='/home/robin/Documents/Wina/Webteam/import-courses/programmaboek-crawler'
-let g:netrw_dirhist_2='/home/robin/dotfiles/oh-my-zsh/oh-my-zsh'
-let g:netrw_dirhist_3='/home/robin/dotfiles/oh-my-zsh/oh-my-zsh/oh-my-zsh'
-let g:netrw_dirhist_4='/home/robin/.urxvt'
-let g:netrw_dirhist_5='/home/robin/Documents/Workspace/personalSite/theme/templates'
+let g:netrw_dirhist_cnt =2
+let g:netrw_dirhist_1='/home/robin/Documents/Wina/Webteam/deployment/provisioning/roles/freeipa-server/tasks'
+let g:netrw_dirhist_2='/home/robin/Documents/KUL/17-18/pno/drone-simulator/.git'

@@ -1,4 +1,4 @@
-Host arenberg
+Host arenberg herstal.cs.kotnet.kuleuven.be
     User r0620169 
 #    ForwardAgent yes	
     HostName st.cs.kuleuven.be
@@ -45,6 +45,6 @@ HOST ssh.pcextreme.nl kljhagelstein.be
     User kljhagelstein-be
     HostName ssh.pcextreme.nl
 
-Host numenor
+Host *.wina.lan
     StrictHostKeyChecking no
     UserKnownHostsFile /dev/null
