@@ -1,4 +1,17 @@
-Host arenberg herstal.cs.kotnet.kuleuven.be
+# Config
+
+## Share connections
+ControlMaster auto
+ControlPath /tmp/ssh_mux_%h_%p_%r
+## Persistant connection
+ControlPersist 1h
+
+#x forwarding
+ForwardX11 yes
+
+# HOSTS
+
+Host arenberg
     User r0620169 
 #    ForwardAgent yes	
     HostName st.cs.kuleuven.be
@@ -7,6 +20,7 @@ Host arenberg herstal.cs.kotnet.kuleuven.be
 Host *.cs.kotnet.kuleuven.be
     User r0620169 
 #    ProxyCommand  ssh arenberg nc %h %p 2> /dev/null
+    ProxyCommand ssh arenberg -W %h:%p
     IdentityFile ~/.ssh/sol_id_rsa
 
 Host gondor gondor.wina.be wina.be
