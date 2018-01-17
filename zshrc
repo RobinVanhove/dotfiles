@@ -6,7 +6,7 @@ DISABLE_AUTO_UPDATE="true"
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
 # ZSH_THEME="custom"
-ZSH_THEME="agnoster"
+ZSH_THEME="kphoen"
 
 # Uncomment the following line to use hyphen-insensitive completion. Case
 # sensitive completion must be off. _ and - will be interchangeable.
@@ -14,7 +14,8 @@ ZSH_THEME="agnoster"
 
 # Would you like to use another custom folder than $ZSH/custom?
 
-plugins=(git ssh-agent tmux sudo zsh-autosuggestions zsh-syntax-highlighting)
+#plugins=(git ssh-agent tmux sudo zsh-autosuggestions zsh-syntax-highlighting)
+plugins=(git tmux sudo zsh-autosuggestions zsh-syntax-highlighting)
 # usefull plugins:
 # tmux
 # vi-mode

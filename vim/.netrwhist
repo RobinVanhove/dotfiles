@@ -1,4 +1,11 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =2
-let g:netrw_dirhist_1='/home/robin/Documents/Wina/Webteam/deployment/provisioning/roles/freeipa-server/tasks'
-let g:netrw_dirhist_2='/home/robin/Documents/KUL/17-18/pno/drone-simulator/.git'
+let g:netrw_dirhist_cnt =9
+let g:netrw_dirhist_1='/home/robin/Documents/Wina/Webteam/deployment/provisioning/roles/djangosite/handlers'
+let g:netrw_dirhist_2='/home/robin/Documents/Wina/Webteam/deployment/provisioning/roles/vagrant-locale-fix'
+let g:netrw_dirhist_3='/home/robin/Documents/Wina/Webteam/deployment/provisioning/roles/vagrant-locale-fix/tasks'
+let g:netrw_dirhist_4='/home/robin/Documents/Wina/Webteam/deployment/provisioning/roles/vagrant-locale-fix'
+let g:netrw_dirhist_5='/home/robin/Documents/Wina/Webteam/deployment/provisioning/roles/vagrant-locale-fix/tasks'
+let g:netrw_dirhist_6='/home/robin/Documents/Wina/Webteam/djangosite/apps/silmaril/migrations'
+let g:netrw_dirhist_7='/etc/sysconfig/network'
+let g:netrw_dirhist_8='/etc/sysconfig/network/providers'
+let g:netrw_dirhist_9='/home/robin/Documents/KUL/17-18/aeb'

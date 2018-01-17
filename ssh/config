@@ -1,10 +1,10 @@
 # Config
 
 ## Share connections
-ControlMaster auto
-ControlPath /tmp/ssh_mux_%h_%p_%r
-## Persistant connection
-ControlPersist 1h
+#ControlMaster auto
+#ControlPath /tmp/ssh_mux_%h_%p_%r
+### Persistant connection
+#ControlPersist 1h
 
 #x forwarding
 #ForwardX11 yes
@@ -60,5 +60,9 @@ HOST ssh.pcextreme.nl kljhagelstein.be
     HostName ssh.pcextreme.nl
 
 Host *.wina.lan
+    StrictHostKeyChecking no
+    UserKnownHostsFile /dev/null
+
+Host 192.168.1.1
     StrictHostKeyChecking no
     UserKnownHostsFile /dev/null

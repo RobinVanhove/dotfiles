@@ -7,12 +7,14 @@ call vundle#begin()
 Plugin 'dikiaap/minimalist'
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 Plugin 'lervag/vimtex'
 Plugin 'mattn/webapi-vim'
 Plugin 'mattn/gist-vim'
 Plugin 'godlygeek/tabular'
 "Plugin 'plasticboy/vim-markdown'
 Plugin 'dhruvasagar/vim-table-mode'
+Plugin 'ayu-theme/ayu-vim'
 call vundle#end() 
 filetype plugin indent on 
 """"""""""""""""""""""""""""""
@@ -23,8 +25,11 @@ filetype plugin indent on
 
 " Colorscheme
 "colorscheme molokai
-colorscheme minimalist
-let g:airline_theme='minimalist'
+"colorscheme minimalist
+set termguicolors     " enable true colors support
+let ayucolor="light"  " for light version of theme
+colorscheme ayu
+let g:airline_theme='sol'
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
 
@@ -51,6 +56,7 @@ let g:mapleader = ","
 " Pressing ,ss will toggle and untoggle spell checking
 map <leader>ss :setlocal spell!<cr>
 setlocal spelllang=nl
+hi SpellBad gui=undercurl guisp=red
 
 " Smaller tabs
 set shiftwidth=4
@@ -102,3 +108,7 @@ let g:table_mode_header_fillchar='='
 
 " Allow saving of files as sudo when I forgot to start vim using sudo.
 cmap w!! w !sudo tee > /dev/null %
+
+" store swp file in home dir
+set directory=$HOME/.vim/swapfiles//
+
