@@ -4,34 +4,41 @@ filetype off
 
 set rtp+=$HOME/.vim/bundle/Vundle.vim
 call vundle#begin()
-Plugin 'dikiaap/minimalist'
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'lervag/vimtex'
-Plugin 'mattn/webapi-vim'
 Plugin 'mattn/gist-vim'
 Plugin 'godlygeek/tabular'
-"Plugin 'plasticboy/vim-markdown'
 Plugin 'dhruvasagar/vim-table-mode'
 Plugin 'ayu-theme/ayu-vim'
+Plugin 'majutsushi/tagbar'
+Plugin 'scrooloose/nerdtree'
+Plugin 'Valloric/YouCompleteMe'
 call vundle#end() 
 filetype plugin indent on 
 """"""""""""""""""""""""""""""
 
-" enable syntax and plugins
+let g:ycm_server_python_interpreter = '/usr/bin/python'
+
+" enable syntax and filetype detection
 syntax enable
 filetype plugin indent on
 
 " Colorscheme
-"colorscheme molokai
-"colorscheme minimalist
 set termguicolors     " enable true colors support
 let ayucolor="light"  " for light version of theme
 colorscheme ayu
 let g:airline_theme='sol'
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
+
+" Enable airline
+set laststatus=2
+
+" Tagbar shortcut
+nmap <F8> :TagbarToggle<CR>
+nmap <F7> :NERDTreeToggle<CR>
 
 " Use mouse
 set mouse=a
@@ -51,7 +58,6 @@ set sidescrolloff=3
 
 " leader keys
 let mapleader = ","
-let g:mapleader = ","
 
 " Pressing ,ss will toggle and untoggle spell checking
 map <leader>ss :setlocal spell!<cr>
@@ -72,19 +78,12 @@ noremap  <buffer> <silent> j gj
 noremap  <buffer> <silent> 0 g0
 noremap  <buffer> <silent> $ g$
 
-set t_Co=256
-syntax on
-set encoding=utf-8
-set guifont=Hack
-
 " show incomplete commands in bottom right corner
 set showcmd
-
 
 " Show list instead of just completing
 set wildmenu
 set wildmode=longest:full,full
-
 
 " Ignore case, except when using upper-case letters in search pattern
 set ignorecase
@@ -93,13 +92,9 @@ set smartcase
 " Highlight current horizontal line
 set cursorline
 
-" Airline
-set laststatus=2
-let g:airline_powerline_fonts = 1
-
 " Synctex support
-let g:latex_view_general_viewer = 'zathura'
-let g:vimtex_view_method = 'zathura'
+let g:latex_view_general_viewer = 'okular'
+let g:vimtex_view_method = 'okular'
 let g:vimtex_complete_close_braces = 1
 
 " Markdown compatible tables
